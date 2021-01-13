@@ -1,0 +1,5 @@
+#step17 .erb part 2 filtering bookmarks by tags
+<form action="/bookmarks/<%= @bookmark_id %>/tags" method="POST">
+    <input name="tag" type="text" />
+    <input value="Submit" type="submit" />
+</form>
