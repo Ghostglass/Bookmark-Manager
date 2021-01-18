@@ -19,6 +19,7 @@ GEM
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+    pg (1.2.3)
     public_suffix (4.0.6)
     racc (1.5.2)
     rack (2.2.3)
@@ -57,9 +58,10 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  pg
   rspec
   shotgun
   sinatra
 
 BUNDLED WITH
-    2.1.2
+   2.1.2

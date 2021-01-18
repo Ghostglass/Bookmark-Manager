@@ -15,6 +15,14 @@ class BookmarkManager < Sinatra::Base
     erb :'bookmarks/index'
     end
 
+    get '/bookmarks' do
+        # Print the ENV variable
+        p ENV
+    
+        @bookmarks = Bookmark.all
+        erb :index
+    end
+
     run! if app_file == $0
 end
 
